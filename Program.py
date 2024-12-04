@@ -6,7 +6,7 @@ from langchain_core.runnables import RunnableBranch
 from langchain_core.output_parsers import StrOutputParser
 import os
 
-llm = OpenAI(openai_api_key=st.secrets["OpenAI_Key"])
+llm = OpenAI(openai_api_key=st.secrets["OpenAI_Key"], model = "gpt-4o")
 
 
 ### Create the decision-making chain
